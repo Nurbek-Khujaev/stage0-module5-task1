@@ -32,8 +32,8 @@ public class ArrayTasks {
         int[] numArray;
         numArray = new int[length];
 
-        for (int i = 1; i <= length; i++) {
-            numArray[i] = i;
+        for (int i = 0; i < length; i++) {
+            numArray[i] = i + 1;
         }
 
         return numArray;
@@ -171,9 +171,13 @@ public class ArrayTasks {
     public int[][] sortRaggedArray(int[][] arr) {
 
 
-        for (int i = 0; i < arr.length; i++) {
 
-        }
+
+
+
+
+
+
 
 
         return arr;
