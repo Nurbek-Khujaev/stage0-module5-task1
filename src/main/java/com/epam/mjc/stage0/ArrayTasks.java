@@ -1,7 +1,6 @@
 package com.epam.mjc.stage0;
 
 
-
 /**
  * Here are the tasks for working with the arrays.
  * <p>
@@ -129,19 +128,32 @@ public class ArrayTasks {
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
 
-        int[] array = new int[arr.length];
 
-        for (int i = 0; i < arr.length; i++) {
+        int cnt = 0;
 
-            if (arr[i] > 0) {
-                array[i] = arr[i];
+
+        for (int j : arr) {
+
+            if (j > 0) {
+                cnt++;
+            }
+
+        }
+
+        int[] array = new int[cnt];
+        int ind = 0;
+
+
+        for (int j : arr) {
+
+            if (j > 0) {
+                array[ind] = j;
+                ind++;
             }
 
         }
 
         return array;
-
-
 
 
     }
@@ -162,9 +174,6 @@ public class ArrayTasks {
         for (int i = 0; i < arr.length; i++) {
 
         }
-
-
-
 
 
         return arr;

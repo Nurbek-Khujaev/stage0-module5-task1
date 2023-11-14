@@ -39,7 +39,7 @@ public class AlgorithmComplexity {
      */
     public Complexity binarySorting() {
 
-        return Complexity.O_N_LOG_N;
+        return Complexity.O_LOG_N;
 
     }
 
