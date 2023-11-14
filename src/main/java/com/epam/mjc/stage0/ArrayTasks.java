@@ -172,15 +172,13 @@ public class ArrayTasks {
 
 
         for (int i = 0; i < arr.length - 1; i++) {
-            int minIndex = i;
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j].length < arr[minIndex].length) {
-                    minIndex = j;
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j].length > arr[j + 1].length) {
+                    int[] temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
-            int[] temp = arr[minIndex];
-            arr[minIndex] = arr[i];
-            arr[i] = temp;
         }
 
         for (int i = 0; i < arr.length; i++) {
