@@ -101,7 +101,7 @@ public class ArrayTasks {
         reversedArr = new String[arr.length];
         int cnt = 0;
 
-        for (int i = arr.length - 1; i > 0; i--) {
+        for (int i = arr.length - 1; i >= 0; i--) {
 
             reversedArr[cnt] = arr[i];
 
